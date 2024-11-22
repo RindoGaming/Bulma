@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body class="is-family-monospace">
+    <nav class="navbar is-transparent" role="navigation" aria-label="dropdown navigation">
+        <a class="navbar-item" href="index.html">
+            <img src="logo inverted.png" alt="Bit Academy Logo">
+        </a>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-white">
+                Welcome student!
+            </h1>
+            <p class="subtitle has-text-white">
+                Here you can set your <strong class="has-text-link">goals</strong>.
+            </p>
+        </div>
+    </section>
+    <div class="columns">
+        <div class="column is-1"></div>
+
+        <div class="column">
+            <section class="section">
+                <div class="container">
+                    <h1 class="title has-text-centered">Schedule</h1>
+                    <div class="box">
+                        <div class="level">
+                            <input id="datePicker" class="input" type="date" />
+                            <h2 id="selectedDate" class="title is-4">Select a Date</h2>
+                        </div>
+                        <div class="time-grid" id="timeGrid">
+                            <!-- Time slots will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="column">
+            <table class="table">
+                <tr>
+                    <th class="is-size-1">
+                        Latest activity
+                    </th>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nemo, debitis minus similique
+                        odit itaque eaque unde impedit repellat vel architecto hic labore, pariatur voluptas nulla
+                        commodi ipsam, vitae illum.</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nemo, debitis minus similique
+                        odit itaque eaque unde impedit repellat vel architecto hic labore, pariatur voluptas nulla
+                        commodi ipsam, vitae illum.</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nemo, debitis minus similique
+                        odit itaque eaque unde impedit repellat vel architecto hic labore, pariatur voluptas nulla
+                        commodi ipsam, vitae illum.</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil nemo, debitis minus similique
+                        odit itaque eaque unde impedit repellat vel architecto hic labore, pariatur voluptas nulla
+                        commodi ipsam, vitae illum.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="column is-1"></div>
+    </div>
+    <script src="calender.js"></script>
+</body>
+
+</html>

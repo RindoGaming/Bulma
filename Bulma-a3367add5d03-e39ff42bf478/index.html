@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body class="is-family-monospace">
+    <nav class="navbar is-transparent" role="navigation" aria-label="dropdown navigation">
+        <a class="navbar-item" href="index.html">
+            <img src="logo inverted.png" alt="Bit Academy Logo">
+        </a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-body">
+            <p class="title">
+                Your daily goals, organized here!
+            </p>
+            <p class="subtitle column is-narrow-tablet">
+                Organize your goals here, register yourself into the lesson, and check the times you have to be at
+                school.
+            </p>
+        </div>
+    </section>
+    <div class="columns">
+        <div class="column is-offset-2">
+            <table class="table">
+                <tr>
+                    <th class="is-size-1">
+                        Check it out!
+                    </th>
+                </tr>
+                <tr>
+                    <td class="has-text-centered is-size-3">
+                        <button id="showModal" class="button is-warning is-large is-dark is-outlined">Sign In</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="column">
+            <figure class="is-rounded"><img src="main screen.png" alt="some person planning"></figure>
+        </div>
+        <div class="column is-1"></div>
+    </div>
+    <div id="signin-modal" class="modal">
+        <div id="SignIn" class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <h1 class="has-text-centered is-size-1 has-text-weight-bold">Sign In before entering.</h1>
+                <p class="subtitle column has-text-centered">
+                    Before you can go in you will have to sign in. Please enter your Email, name and username. After
+                    that choose if you are a teacher or student.
+                </p>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" placeholder="Email input">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Username</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Text input">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Password</label>
+                    <div class="control">
+                        <input class="input" type="password" placeholder="Password input">
+                    </div>
+                </div>
+
+
+                <div class="field">
+                    <div class="control">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            I agree to the <a href="https://www.pdfcopypaste.com/terms.html">terms and conditions</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <a href="Student.html"><button class="button is-success">I'm a student</button></a>
+                    </div>
+                    <div class="control">
+                        <a href="teacher.html"><button class="button is-success">I'm a teacher</button></a>
+                    </div>
+                    <div class="control">
+                        <button id="signin-modal-close" class="button is-link is-light">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="modal.js"></script>
+</body>
+
+</html>
